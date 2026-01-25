@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>SSAME 2026 - NERIST</title>
+</head>
+
+<body>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            min-height: 100%;
+        }
+    </style>
+
+    <nav class="absolute top-0 w-full bg-white border-gray-200 border-2 dark:bg-gray-900 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+                <img src="assets/images/logo.png" alt="Logo" class="h-8 w-auto">
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">SSAME
+                    2026</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tracks.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Tracks
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="./cfp.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Call for Papers
+                        </a>
+                        <ul class="absolute hidden bg-white text-gray-900 pt-1 w-32 border border-gray-200 z-10"
+                            id="author-dropdown">
+                            <li><a href="./authorguideline.html" class="block px-4 py-2 hover:bg-gray-200">Authors
+                                    Guidelines</a></li>
+                        </ul>
+                    </li>
+                    <style>
+                        li.relative:hover #author-dropdown {
+                            display: block;
+                        }
+                    </style>
+
+                    <li>
+                        <a href="organising.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Organizing Committee
+                        </a>
+                    </li>
+                    <li>
+                        <a href="awards.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md ">Awards</a>
+                    </li>
+                    <li>
+                        <a href="speakers.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Speakers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="objective.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Objectives
+                        </a>
+                    </li>
+                    <li>
+                        <a href="register.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Register
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="min-h-screen bg-gray-900">
+        <h1 id="objective" class="text-3xl font-bold text-center pt-32 text-white bg-gray-900">What To Expect From Us?
+        </h1>
+
+        <div class="flex flex-col md:flex-row md:gap-20 justify-center p-10 md:p-20 bg-gray-900 pb-20 ">
+            <div class="w-full md:w-1/2 p-4 bg-gray-100 rounded-2xl mb-10 md:mb-0">
+                <div class="absolute flex justify-end">
+                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
+                </div>
+                <footer class="mb-10 flex justify-center">
+                    <button
+                        class="flex items-baseline rounded-full bg-blue-700 px-4 py-2.5 text-xl font-bold text-white">
+                        <span>Objectives</span>
+                    </button>
+                </footer>
+                <p>
+                    <li class="text-md font-medium text-gray-800">The conference aims to serve as a dynamic hub that
+                        promotes and actively contributes to the advancement of research and developmental activities,
+                        driving the discipline towards new horizons of knowledge and application.</li> <br>
+                    <li class="text-md font-medium text-gray-800">Fostering Global Collaboration and Knowledge Exchange
+                        &
+                        cultivating a vibrant ecosystem for the exchange of scientific information among a diverse
+                        community
+                        of academicians, researchers, developers, engineers, students, and practitioners worldwide.</li>
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 p-4 bg-gray-100 rounded-2xl">
+                <div class="absolute flex justify-end">
+                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
+                </div>
+                <footer class="mb-10 flex justify-center">
+                    <button
+                        class="flex items-baseline rounded-full bg-blue-700 px-4 py-2.5 text-xl font-bold text-white">
+                        <span>Expected Outcomes</span>
+                    </button>
+                </footer>
+                <p>
+                    <li class="text-md font-medium text-gray-800">Advance the field of sustainable manufacturing by
+                        disseminating knowledge, sparking new collaborations, and identifying future research
+                        directions.
+                    </li>
+                    <li class="text-md font-medium text-gray-800">Empower industry professionals with practical tools
+                        and
+                        insights to implement sustainable practices and optimize their operations.</li>
+                    <li class="text-md font-medium text-gray-800">Bridge the gap between academia and industry by
+                        fostering
+                        dialogue and knowledge exchange between researchers and practitioners.</li>
+                    <li class="text-md font-medium text-gray-800">Contribute to policy development by providing
+                        evidence-based insights to policymakers and regulators.</li>
+                    <li class="text-md font-medium text-gray-800">Inspire future generations to pursue their career in
+                        research and higher studies.</li>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="text-gray-600 body-font bg-gray-900">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="assets/images/logo.png" class="h-10">
+                <span class="ml-3 text-xl text-gray-100">SSAME-2026</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2026 SSAME</p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="ml-3 text-gray-500" href="#">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="#">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="#">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
