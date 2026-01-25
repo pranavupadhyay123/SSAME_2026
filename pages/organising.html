@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <title>SSAME 2026 - NERIST</title>
@@ -23,9 +23,9 @@
 
     <nav class="absolute top-0 w-full bg-white border-gray-200 border-2 dark:bg-gray-900 z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
 
-                <img src="assets/images/logo.png" alt="Logo" class="h-8 w-auto">
+                <img src="../assets/images/logo.png" alt="Logo" class="h-8 w-auto">
                 <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">SSAME
                     2026</span>
             </a>
@@ -43,7 +43,7 @@
                 <ul
                     class="font-medium flex flex-col md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="index.html"
+                        <a href="../index.html"
                             class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
                             Home
                         </a>
@@ -54,22 +54,12 @@
                             Tracks
                         </a>
                     </li>
-                    <li class="relative">
-                        <a href="./cfp.html"
+                    <li>
+                        <a href="cfp.html"
                             class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
                             Call for Papers
                         </a>
-                        <ul class="absolute hidden bg-white text-gray-900 pt-1 w-32 border border-gray-200 z-10"
-                            id="author-dropdown">
-                            <li><a href="./authorguideline.html" class="block px-4 py-2 hover:bg-gray-200">Authors
-                                    Guidelines</a></li>
-                        </ul>
                     </li>
-                    <style>
-                        li.relative:hover #author-dropdown {
-                            display: block;
-                        }
-                    </style>
 
                     <li>
                         <a href="organising.html"
@@ -114,59 +104,72 @@
 
 
 
-    <div class="min-h-screen bg-gray-900">
-        <h1 id="objective" class="text-3xl font-bold text-center pt-32 text-white bg-gray-900">What To Expect From Us?
-        </h1>
+    <div id="oc" style="text-align: center; font-family: Arial, sans-serif; margin: auto;" class="bg-white">
 
-        <div class="flex flex-col md:flex-row md:gap-20 justify-center p-10 md:p-20 bg-gray-900 pb-20 ">
-            <div class="w-full md:w-1/2 p-4 bg-gray-100 rounded-2xl mb-10 md:mb-0">
-                <div class="absolute flex justify-end">
-                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
-                </div>
-                <footer class="mb-10 flex justify-center">
-                    <button
-                        class="flex items-baseline rounded-full bg-blue-700 px-4 py-2.5 text-xl font-bold text-white">
-                        <span>Objectives</span>
-                    </button>
-                </footer>
-                <p>
-                    <li class="text-md font-medium text-gray-800">The conference aims to serve as a dynamic hub that
-                        promotes and actively contributes to the advancement of research and developmental activities,
-                        driving the discipline towards new horizons of knowledge and application.</li> <br>
-                    <li class="text-md font-medium text-gray-800">Fostering Global Collaboration and Knowledge Exchange
-                        &
-                        cultivating a vibrant ecosystem for the exchange of scientific information among a diverse
-                        community
-                        of academicians, researchers, developers, engineers, students, and practitioners worldwide.</li>
-                </p>
+        <div class="flex items-center justify-center pt-20 mt-10 relative">
+            <button
+                class="flex items-baseline rounded bg-blue-700 px-8 py-4 text-xl font-bold text-white mb-12 relative z-10">
+                <span>Conference Organizing Committee</span>
+            </button>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: auto;">
+
+            <!-- Left Column -->
+            <div style="flex: 1; text-align: left; padding: 10px;">
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Chief Patron</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Prof.
+                    Narendranath S., Director, NERIST</p>
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Patron</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Prof.
+                    Sarsing Gao, Dean (Academic), NERIST</p>
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Co-Patrons</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Prof. Madhu
+                    Bala Sharma, Dean (R&D)</p>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Prof.
+                    Sudisht Mishra, Dean (P &D)</p>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Prof.
+                    Muthumari Chandrasekaran, Dean (Admin.)</p>
+
             </div>
 
-            <div class="w-full md:w-1/2 p-4 bg-gray-100 rounded-2xl">
-                <div class="absolute flex justify-end">
-                    <div class="h-4 w-4 rounded-full bg-gray-900"></div>
-                </div>
-                <footer class="mb-10 flex justify-center">
-                    <button
-                        class="flex items-baseline rounded-full bg-blue-700 px-4 py-2.5 text-xl font-bold text-white">
-                        <span>Expected Outcomes</span>
-                    </button>
-                </footer>
-                <p>
-                    <li class="text-md font-medium text-gray-800">Advance the field of sustainable manufacturing by
-                        disseminating knowledge, sparking new collaborations, and identifying future research
-                        directions.
-                    </li>
-                    <li class="text-md font-medium text-gray-800">Empower industry professionals with practical tools
-                        and
-                        insights to implement sustainable practices and optimize their operations.</li>
-                    <li class="text-md font-medium text-gray-800">Bridge the gap between academia and industry by
-                        fostering
-                        dialogue and knowledge exchange between researchers and practitioners.</li>
-                    <li class="text-md font-medium text-gray-800">Contribute to policy development by providing
-                        evidence-based insights to policymakers and regulators.</li>
-                    <li class="text-md font-medium text-gray-800">Inspire future generations to pursue their career in
-                        research and higher studies.</li>
-                </p>
+            <!-- Right Column -->
+
+            <div style="flex: 1; text-align: left; padding: 10px;">
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Conference Chairs</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Head,
+                    Department of Civil Engineering</p>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Head,
+                    Department of Mechanical Engineering</p>
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Organizing Chairs</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Dr. Neero
+                    Gumsar Sorum</p>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Dr. Yadaiah
+                    Nirsanametla</p>
+
+                <h3
+                    class="text-2xl text-center sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-semibold text-red-600 p-2 ">
+                    Organizing Secretaries</h3>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Dr. Sohini
+                    Chowdhury</p>
+                <p class="text-center text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Dr.
+                    Jeetendra Singh Khichad</p>
+
             </div>
         </div>
     </div>
@@ -175,10 +178,11 @@
 
 
 
+
     <footer class="text-gray-600 body-font bg-gray-900">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="assets/images/logo.png" class="h-10">
+                <img src="../assets/images/logo.png" class="h-10">
                 <span class="ml-3 text-xl text-gray-100">SSAME-2026</span>
             </a>
             <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
@@ -211,7 +215,7 @@
             </span>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>

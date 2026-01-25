@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <title>SSAME 2026 - NERIST</title>
 </head>
 
 <body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+
     <nav class="absolute top-0 w-full bg-white border-gray-200 border-2 dark:bg-gray-900 z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
 
-                <img src="assets/images/logo.png" alt="Logo" class="h-8 w-auto">
+                <img src="../assets/images/logo.png" alt="Logo" class="h-8 w-auto">
                 <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">SSAME
                     2026</span>
             </a>
@@ -32,7 +42,7 @@
                 <ul
                     class="font-medium flex flex-col md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="index.html"
+                        <a href="../index.html"
                             class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
                             Home
                         </a>
@@ -99,43 +109,61 @@
         </div>
     </nav>
 
-    <section class="w-full m-10 p-10 mt-0 pt-0 text-center center self-center text-center items-center justify-center">
-        <h1
-            class="text-4xl font-bold text-orange-500 text-center center self-center text-center items-center justify-center">
-            Authors Guidelines</h1>
-        <br>
-    </section>
 
-    <section class="text-lg m-10 p-10 mt-0 pt-0 text-justify bg-white rounded-lg shadow-md">
-        <a id="about" href="https://cmt3.research.microsoft.com/RACISE2024"
-            class="btn btn-main-md bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
-            target="_blank">Submit paper</a>
-        <p class="mt-4">All papers must be original and not simultaneously submitted to another journal or conference.
-            The authors must follow the SIST format for submission of the paper.</p>
-        <ul class="list-disc mt-4 ml-6">
-            <li>Author must check plagiarism before submitting the paper. Only 10% similarity is allowed</li>
-            <li>Author can follow the <a href="https://www.springer.com/us/authors-editors/conference-proceedings"
-                    target="_blank" class="font-bold text-blue-500 hover:underline">Instruction</a> of <a
-                    href="https://www.springer.com/series/8767" target="_blank"
-                    class="font-bold text-blue-500 hover:underline">SIST, Springer</a> for preparation of manuscript.
-            </li>
-            <li><a href="./LatexTemplate.zip" target="_blank" class="font-bold text-blue-500 hover:underline">Click here
-                    for Latex template</a></li>
-            <li><a href="./WordTemplate.zip" target="_blank" class="font-bold text-blue-500 hover:underline">Click here
-                    for Word template</a></li>
-            <li>Author must include their names, affiliation, address, and email ID in the manuscript</li>
-            <li><span class="font-bold">Camera-ready-copy (CRC):</span> All the accepted papers should address
-                reviewers'
-                comments and the final version should be submitted in MS Word or Latex source including all figures. CRC
-                must contain authors' names and affiliations. Acknowledgment and Funding sources can be included in the
-                final CRC.</li>
-        </ul>
-    </section>
+
+
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-xl shadow-xl w-5/6">
+            <h2 class="text-2xl font-bold mb-4">Conference Registration</h2>
+            <p class="mb-4">Participants are requested to submit their manuscripts in one of the mentioned categories.
+                Please note that Registration needs to be done only after the paper is accepted by the conference
+                committee. Email correspondence will be done to the corresponding authors after receiving reviewer
+                comments of their manuscripts.</p>
+
+            <hr class="my-4">
+
+            <table class="w-full border">
+                <caption class="text-xl font-bold mb-4">Registration Fees</caption>
+                <thead>
+                    <tr>
+                        <th class="text-left border-b">Delegate Category</th>
+                        <th class="text-left border-b">Registration Category</th>
+                        <th class="text-left border-b">Registration Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-b">Students (Indian Nationals)</td>
+                        <td class="border-b">Registration till 15th October, 2024</td>
+                        <td class="border-b">Rs 4000/-</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b">Academicians and Industry Personnel (Indian Nationals)</td>
+                        <td class="border-b">Registration till 15th October, 2024</td>
+                        <td class="border-b">Rs 6000/-</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b">Foreign Participants</td>
+                        <td class="border-b">Registration till 15th October, 2024</td>
+                        <td class="border-b">USD 250/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
     <footer class="text-gray-600 body-font bg-gray-900">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="assets/images/logo.png" class="h-10">
+                <img src="../assets/images/logo.png" class="h-10">
                 <span class="ml-3 text-xl text-gray-100">SSAME-2026</span>
             </a>
             <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
@@ -168,6 +196,9 @@
             </span>
         </div>
     </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
