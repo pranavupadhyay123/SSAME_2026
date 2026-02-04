@@ -2,203 +2,161 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../assets/images/logo.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <title>SSAME 2026 - NERIST</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 
-
-    <nav class="absolute top-0 w-full bg-white border-gray-200 border-2 dark:bg-gray-900 z-50">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-
-                <img src="../assets/images/logo.png" alt="Logo" class="h-8 w-auto">
-                <span class="self-center text-2xl font-bold whitespace-nowrap text-blue-700 dark:text-white">SSAME
-                    2026</span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" height="50" class="me-2">
+                <span>SSAME 2026</span>
             </a>
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="../index.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tracks.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Tracks
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="./cfp.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="cfp.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Call for Papers
                         </a>
-                        <ul class="absolute hidden bg-white text-gray-900 pt-1 w-32 border border-gray-200 z-10"
-                            id="author-dropdown">
-                            <li><a href="./authorguideline.html" class="block px-4 py-2 hover:bg-gray-200">Authors
-                                    Guidelines</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cfp.html">Call for Papers</a></li>
+                            <li><a class="dropdown-item" href="authorguideline.html">Authors Guidelines</a></li>
                         </ul>
                     </li>
-                    <style>
-                        li.relative:hover #author-dropdown {
-                            display: block;
-                        }
-                    </style>
-
-                    <li>
-                        <a href="organising.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Organizing Committee
-                        </a>
-                    </li>
-                    <li>
-                        <a href="awards.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md ">Awards</a>
-                    </li>
-                    <li>
-                        <a href="speakers.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Speakers
-                        </a>
-                    </li>
-                    <li>
-                        <a href="objective.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Objectives
-                        </a>
-                    </li>
-                    <li>
-                        <a href="register.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Register
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html"
-                            class="text-md font-bold block text-gray-900 md:border-0 dark:text-white hover:text-white hover:bg-blue-700 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent px-2 py-1 rounded-md">
-                            Contacts
-                        </a>
+                    <li class="nav-item"><a class="nav-link" href="organising.html">Organizing Committee</a></li>
+                    <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="objective.html">Objectives</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-custom btn-blinking text-white rounded-pill px-4"
+                            href="register.html">Register</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-
-    <div class="flex justify-center items-center min-h-screen">
-        <div class="bg-white p-8 rounded-xl shadow-xl w-5/6">
-            <h2 class="text-2xl font-bold mb-4">Conference Registration</h2>
-            <p class="mb-4">Participants are requested to submit their manuscripts in one of the mentioned categories.
-                Please note that Registration needs to be done only after the paper is accepted by the conference
-                committee. Email correspondence will be done to the corresponding authors after receiving reviewer
-                comments of their manuscripts.</p>
-
-            <hr class="my-4">
-
-            <table class="w-full border">
-                <caption class="text-xl font-bold mb-4">Registration Fees</caption>
-                <thead>
-                    <tr>
-                        <th class="text-left border-b">Delegate Category</th>
-                        <th class="text-left border-b">Registration Category</th>
-                        <th class="text-left border-b">Registration Fee</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border-b">Students (Indian Nationals)</td>
-                        <td class="border-b">Registration till 15th October, 2024</td>
-                        <td class="border-b">Rs 4000/-</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b">Academicians and Industry Personnel (Indian Nationals)</td>
-                        <td class="border-b">Registration till 15th October, 2024</td>
-                        <td class="border-b">Rs 6000/-</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b">Foreign Participants</td>
-                        <td class="border-b">Registration till 15th October, 2024</td>
-                        <td class="border-b">USD 250/-</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Header Section -->
+    <div class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="section-title">Registration Details</h1>
         </div>
     </div>
 
+    <!-- Main Content -->
+    <main class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-file-signature fa-3x text-primary mb-3"></i>
+                                <h3 class="fw-bold">Registration Guidelines</h3>
+                            </div>
+                            <p class="mb-4 text-justify fs-5 text-muted">Participants are requested to submit their
+                                manuscripts in one of the mentioned categories. Please note that <strong
+                                    class="text-dark">Registration needs to be done only after the paper is
+                                    accepted</strong> by the conference committee. Email correspondence will be done to
+                                the corresponding authors after receiving reviewer comments of their manuscripts.</p>
 
+                            <hr class="my-5 opacity-25">
 
+                            <h4
+                                class="fw-bold mb-4 text-center border-start border-4 border-danger ps-3 d-inline-block">
+                                Registration Fees</h4>
 
+                            <div class="table-responsive rounded shadow-sm">
+                                <table class="table table-bordered table-striped table-hover align-middle mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th class="py-3">Delegate Category</th>
+                                            <th class="py-3">Registration Category</th>
+                                            <th class="py-3">Registration Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-semibold">Students (Indian Nationals)</td>
+                                            <td>Registration till 15th October, 2024</td>
+                                            <td class="text-danger fw-bold">Rs 4000/-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Academicians and Industry Personnel (Indian
+                                                Nationals)</td>
+                                            <td>Registration till 15th October, 2024</td>
+                                            <td class="text-danger fw-bold">Rs 6000/-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-semibold">Foreign Participants</td>
+                                            <td>Registration till 15th October, 2024</td>
+                                            <td class="text-danger fw-bold">USD 250/-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
-
-
-
-    <footer class="text-gray-600 body-font bg-gray-900">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="../assets/images/logo.png" class="h-10">
-                <span class="ml-3 text-xl text-gray-100">SSAME-2026</span>
-            </a>
-            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
-                2026 SSAME</p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="ml-3 text-gray-500" href="#">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-gray-500" href="#">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                </a>
-                <a class="ml-3 text-gray-500" href="#">
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path stroke="none"
-                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
-                        </path>
-                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                </a>
-            </span>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a href="#" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+                        <img src="../assets/images/logo.png" alt="Logo" height="40" class="me-2 bg-white rounded p-1">
+                        <span class="fs-4 fw-bold">SSAME-2026</span>
+                    </a>
+                    <p class="text-muted small text-white">© 2026 SSAME. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p class="small text-muted">
+                        NERIST, Nirjuli<br>
+                        Arunachal Pradesh, India<br>
+                        Email: info@ssame2026.com
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Social Media</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
