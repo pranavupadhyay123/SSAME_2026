@@ -27,7 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+      // Toggle Read More / Read Less Text
+      function toggleReadMore(button) {
+        if (button.innerText === "Read More") {
+          button.innerText = "Read Less";
+        } else {
+          button.innerText = "Read More";
+        }
+      }
       element.innerHTML = `
               <div class="d-flex justify-content-center gap-3">
                   <div class="text-center">
@@ -67,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize Countdowns
   // 1. Conference Date: Nov 7, 2026
-  startCountdown("conference-countdown", "Nov 7, 2026 09:00:00");
+  startCountdown("conference-countdown", "Nov 13, 2026 09:00:00");
 
   // 2. Paper Submission Deadline: Placeholder (e.g., Nov 1, 2026) -> User to confirm
-  startCountdown("submission-countdown", "Nov 1, 2026 23:59:59");
+  startCountdown("submission-countdown", "Oct 5, 2026 23:59:59");
 
 });

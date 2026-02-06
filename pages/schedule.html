@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSAME 2026 - NERIST</title>
+    <title>Schedule - SSAME 2026</title>
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
 
     <!-- Bootstrap 5 CSS -->
@@ -29,10 +29,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="brochure.html">Brochure</a></li>
-                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="schedule.html">Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="cfp.html" id="navbarDropdown" role="button"
@@ -48,7 +48,6 @@
                     <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
                     <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
                     <li class="nav-item"><a class="nav-link" href="objective.html">Objectives</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
                     <li class="nav-item ms-lg-3">
                         <a class="btn btn-primary-custom btn-blinking text-white rounded-pill px-4"
@@ -59,71 +58,43 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <div class="bg-light py-5">
-        <div class="container text-center">
-            <h1 class="section-title">Registration Details</h1>
-        </div>
-    </div>
+    <!-- Page Header -->
+    <header class="page-header text-center d-flex align-items-center justify-content-center"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/jubilee.jpg') no-repeat center center/cover; height: 300px;">
+        <h1 class="text-white fw-bold display-4">Conference Schedule</h1>
+    </header>
 
-    <!-- Main Content -->
-    <main class="section-padding">
+    <!-- Content Section -->
+    <section class="section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body p-5">
-                            <div class="text-center mb-4">
-                                <i class="fas fa-file-signature fa-3x text-primary mb-3"></i>
-                                <h3 class="fw-bold">Registration Guidelines</h3>
-                            </div>
-                            <p class="mb-4 text-justify fs-5 text-muted">Participants are requested to submit their
-                                manuscripts in one of the mentioned categories. Please note that <strong
-                                    class="text-dark">Registration needs to be done only after the paper is
-                                    accepted</strong> by the conference committee. Email correspondence will be done to
-                                the corresponding authors after receiving reviewer comments of their manuscripts.</p>
-
-                            <hr class="my-5 opacity-25">
-
-                            <h4
-                                class="fw-bold mb-4 text-center border-start border-4 border-danger ps-3 d-inline-block">
-                                Registration Fees</h4>
-
-                            <div class="table-responsive rounded shadow-sm">
-                                <table class="table table-bordered table-striped table-hover align-middle mb-0">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th class="py-3">Delegate Category</th>
-                                            <th class="py-3">Registration Category</th>
-                                            <th class="py-3">Registration Fee</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="fw-semibold">Students (Indian Nationals)</td>
-                                            <td>Registration till 15th October, 2024</td>
-                                            <td class="text-danger fw-bold">Rs 4000/-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fw-semibold">Academicians and Industry Personnel (Indian
-                                                Nationals)</td>
-                                            <td>Registration till 15th October, 2024</td>
-                                            <td class="text-danger fw-bold">Rs 6000/-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fw-semibold">Foreign Participants</td>
-                                            <td>Registration till 15th October, 2024</td>
-                                            <td class="text-danger fw-bold">USD 250/-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="alert alert-info text-center" role="alert">
+                        <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>PDF Not Available</h4>
+                        <p>The conference schedule PDF is currently being finalized. Please check back soon.</p>
+                        <hr>
+                        <p class="mb-0">Once uploaded, the document will appear below.</p>
                     </div>
+
+                    <!-- PDF Embed Placeholder -->
+                    <!-- Un-comment and update 'src' when PDF is available -->
+                    <!-- 
+                    <div class="ratio ratio-16x9 border shadow-sm rounded">
+                        <embed src="../assets/documents/schedule.pdf" type="application/pdf">
+                    </div> 
+                    -->
+
+                    <!-- Alternative Object Tag if needed -->
+                    <object data="" type="application/pdf" width="100%" height="800px" class="d-none">
+                        <p>Your web browser doesn't have a PDF plugin.
+                            <a href="#">Click here to download the PDF file.</a>
+                        </p>
+                    </object>
+
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer>
