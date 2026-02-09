@@ -385,3 +385,8 @@ h5 {
         font-size: 1.25rem;
     }
 }
+
+/* Utility Classes */
+.text-justify {
+    text-align: justify;
+}
