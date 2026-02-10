@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSAME 2026 - NERIST</title>
+    <title>Organizing Team - SSAME 2026</title>
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
 
     <!-- Bootstrap 5 CSS -->
@@ -13,6 +13,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .member-card {
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-img-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            border: 3px solid var(--primary-color);
+        }
+    </style>
 </head>
 
 <body>
@@ -35,23 +56,23 @@
                     <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="cfp.html" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="cfp.html" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Call for Papers
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item active" href="cfp.html">Call for Papers</a></li>
+                            <li><a class="dropdown-item" href="cfp.html">Call for Papers</a></li>
                             <li><a class="dropdown-item" href="authorguideline.html">Authors Guidelines</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="organizingDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active" href="#" id="organizingDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Organizing Committee
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="organizingDropdown">
                             <li><a class="dropdown-item" href="advisory.html">Advisory Committee</a></li>
-                            <li><a class="dropdown-item" href="organising_team.html">Organizing Team</a></li>
+                            <li><a class="dropdown-item active" href="organising_team.html">Organizing Team</a></li>
                             <li><a class="dropdown-item" href="organising_committee.html">Organizing Committee</a></li>
                             <li><a class="dropdown-item" href="local_advisory.html">Local Advisory Committee</a></li>
                         </ul>
@@ -73,75 +94,66 @@
     <!-- Header Section -->
     <div class="bg-light py-5">
         <div class="container text-center">
-            <h1 class="section-title">Call For Papers & Publication</h1>
+            <h1 class="section-title">Organizing Team</h1>
         </div>
     </div>
 
     <!-- Main Content -->
     <main class="section-padding">
         <div class="container">
-            <!-- Guidelines Text -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <ul class="list-group list-group-flush fs-6 text-justify">
-                                <li class="list-group-item border-0 pb-3">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    We extend a warm invitation to students, academicians/researchers, and industrial
-                                    experts to submit original and review full-text papers. Contributions should align
-                                    with the conference's scope and must be unpublished, ensuring that they are not
-                                    currently under consideration for publication elsewhere.
-                                </li>
-                                <li class="list-group-item border-0 pb-3">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Each paper that is accepted to the conference program by the organizing committee
-                                    and meets the final submission and registration requirements will be required to
-                                    present their work at the conference as scheduled by the organizing committee.
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    All accepted and presented papers will be <span class="fw-bold text-dark">published
-                                        in Scopus/SCIE-indexed</span> conference proceeding and after completing peer
-                                    review, accepted manuscripts may submit an expanded version to any of the mentioned
-                                    journals if it fits the journal's parameters.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
+            <!-- Chief Patron -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Chief Patron</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Prof. Narendranath S.</strong> – Director, NERIST</li>
+                </ul>
             </div>
 
-            <!-- Important Dates -->
-            <div class="text-center mb-5 mt-5">
-                <h3 class="section-title">Important Dates</h3>
+            <!-- Patron -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Patron</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Prof. Sarsing Gao</strong> – Dean (Academic), NERIST</li>
+                </ul>
             </div>
 
-            <div class="row text-center justify-content-center">
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 border-bottom border-danger border-4">
-                        <h6>Full paper submission</h6>
-                        <h5 class="text-danger mt-3">30/10/2024</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 border-bottom border-danger border-4">
-                        <h6>Acceptance Notification</h6>
-                        <h5 class="text-danger mt-3">30/10/2024</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 border-bottom border-danger border-4">
-                        <h6>Registration</h6>
-                        <h5 class="text-danger mt-3">01/09/2024 to 30/09/2024</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 border-bottom border-danger border-4">
-                        <h6>Conference Dates</h6>
-                        <h5 class="text-danger mt-3">19th - 20th December 2024</h5>
-                    </div>
-                </div>
+            <!-- Co-Patrons -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Co-Patrons</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Prof. Madhu Bala Sharma</strong> – Dean (R&D)</li>
+                    <li class="list-group-item"><strong>Prof. Dr. Sachindra Mahto</strong> – Dean (P & D)</li>
+                    <li class="list-group-item"><strong>Prof. Muthumari Chandrasekaran</strong> – Dean (Admin.)</li>
+                    <li class="list-group-item"><strong>Prof. Sudisht Mishra</strong></li>
+                </ul>
+            </div>
+
+            <!-- Conference Chairs -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Conference Chairs</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Heads, Department of Civil & Mechanical Engineering</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Organizing Chairs -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Organizing Chairs</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Dr. Neero Gumsar Sorum</strong></li>
+                    <li class="list-group-item"><strong>Dr. Yadaiah Nirsanametla</strong></li>
+                </ul>
+            </div>
+
+            <!-- Organizing Secretaries -->
+            <div class="mb-5">
+                <h3 class="text-danger border-start border-4 border-danger ps-3 mb-4">Organizing Secretaries</h3>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item"><strong>Dr. Sohini Chowdhury</strong></li>
+                    <li class="list-group-item"><strong>Dr. Jeetendra Singh Khichad</strong></li>
+                </ul>
             </div>
 
         </div>
