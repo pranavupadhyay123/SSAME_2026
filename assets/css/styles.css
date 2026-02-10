@@ -390,3 +390,71 @@ h5 {
 .text-justify {
     text-align: justify;
 }
+
+/* AIMTDR Theme Overrides */
+:root {
+    --aimtdr-blue: #32509C;
+    --aimtdr-green: #2C8B3D;
+    --aimtdr-red: #E84545;
+}
+
+.text-aimtdr-blue {
+    color: var(--aimtdr-blue) !important;
+}
+
+.text-aimtdr-green {
+    color: var(--aimtdr-green) !important;
+}
+
+.aimtdr-page-title {
+    color: var(--aimtdr-blue);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.aimtdr-page-title::before,
+.aimtdr-page-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 3px;
+    background-color: var(--aimtdr-red);
+}
+
+.aimtdr-page-title::before {
+    left: -20px;
+}
+
+.aimtdr-page-title::after {
+    right: -20px;
+}
+
+.aimtdr-section-divider {
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.aimtdr-section-divider::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--aimtdr-green);
+}
+
+.aimtdr-list-group-item {
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: transparent !important;
+    font-size: 16px;
+    color: #212529;
+}
