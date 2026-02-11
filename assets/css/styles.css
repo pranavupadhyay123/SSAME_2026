@@ -1,18 +1,68 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #FF0000;
-    --secondary-color: #004d00;
+    --primary-color: #002060;
+    /* Deep Midnight Blue */
+    --secondary-color: #fca311;
+    /* Vibrant Gold */
+    --accent-color: #00b4d8;
+    /* Bright Teal */
     --text-color: #212529;
     --bg-light: #f8f9fa;
-    --bg-dark: #060606;
+    --bg-dark: #001540;
+    --border-radius: 8px;
+
+    /* Bootstrap Overrides */
+    --bs-primary: var(--primary-color);
+    --bs-secondary: var(--secondary-color);
+    --bs-body-bg: #ffffff;
 }
+
+/* Force Bootstrap Utility Overrides */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-danger {
+    color: var(--secondary-color) !important;
+}
+
+/* If any remain */
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.border-secondary {
+    border-color: var(--secondary-color) !important;
+}
+
+.border-danger {
+    border-color: var(--primary-color) !important;
+}
+
+/* Replace red borders with deep blue */
+
+/* Background Overrides */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 h1,
@@ -21,38 +71,40 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    color: var(--primary-color);
 }
 
 
 /* Navbar Customization */
 .navbar-custom {
-    background-color: #ffffff !important;
-    /* Force white background */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
-    color: var(--secondary-color);
+    color: #ffffff !important;
     font-size: 24px;
+    letter-spacing: 0.5px;
 }
 
 .navbar-custom .nav-link {
-    color: var(--text-color) !important;
-    /* text-dark */
-    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 14px;
-    padding: 10px 8px !important;
-    transition: color 0.3s ease;
+    padding: 10px 15px !important;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link.active {
-    color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Page Layout for Sticky Footer */
@@ -95,15 +147,17 @@ footer {
 
 /* Section Styling */
 .section-padding {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .section-title {
     position: relative;
     display: inline-block;
     padding: 0 20px;
-    margin-bottom: 50px;
-    color: var(--secondary-color);
+    margin-bottom: 60px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section-title::before,
@@ -113,32 +167,52 @@ footer {
     top: 50%;
     width: 60px;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 2px;
 }
 
 .section-title::before {
     left: -60px;
-    /* Adjust based on gap preference */
 }
 
 .section-title::after {
     right: -60px;
-    /* Adjust based on gap preference */
 }
 
 /* Buttons */
+/* Buttons */
 .btn-primary-custom {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: white;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #e09100 100%);
+    border: none;
+    color: #000;
     font-weight: 600;
-    padding: 10px 25px;
-    transition: all 0.3s;
+    padding: 12px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy effect */
 }
 
 .btn-primary-custom:hover {
-    background-color: #cc0000;
-    border-color: #cc0000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(252, 163, 17, 0.4);
+    color: #000;
+    background: linear-gradient(135deg, #e09100 0%, var(--secondary-color) 100%);
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Blinking Button Animation */
@@ -168,26 +242,27 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    /* gap-20 ~ 5rem, reduced slightly for better fit */
     justify-content: center;
     padding-bottom: 5rem;
 }
 
 .track-card {
     position: relative;
-    width: 20rem;
-    /* w-80 */
-    min-height: 24rem;
-    /* h-96 */
-    background-color: var(--bg-light);
-    /* bg-gray-100 */
-    border-radius: 1rem;
-    /* rounded-2xl */
-    padding: 1.5rem;
-    /* p-6 */
-    /* transform: rotate(2deg);
-    transition: transform 0.3s ease; */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 22rem;
+    min-height: 26rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.track-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary-color);
 }
 
 .track-card:hover {
@@ -244,18 +319,21 @@ footer {
 /* Footer */
 footer {
     background-color: var(--bg-dark);
+    /* Deep Blue */
     color: white;
-    padding: 60px 0 20px;
+    padding: 80px 0 30px;
     margin-top: auto;
-    /* Ensures footer stays at bottom if using flex column on body */
 }
 
 footer h5 {
-    color: white;
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--primary-color);
+    color: var(--secondary-color);
+    /* Gold headings */
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     display: inline-block;
     padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 /* Specific override for Bootstrap's text-muted class inside footer */

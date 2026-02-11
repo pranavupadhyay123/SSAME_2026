@@ -35,35 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
           button.innerText = "Read More";
         }
       }
-      element.innerHTML = `
-              <div class="d-flex justify-content-center gap-3">
-                  <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">${days}</span>
-                      <div class="small text-uppercase">Days</div>
-                  </div>
-                   <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">:</span>
-                  </div>
-                  <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">${hours}</span>
-                      <div class="small text-uppercase">Hours</div>
-                  </div>
-                   <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">:</span>
-                  </div>
-                  <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">${minutes}</span>
-                      <div class="small text-uppercase">Mins</div>
-                  </div>
-                   <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">:</span>
-                  </div>
-                  <div class="text-center">
-                      <span class="display-5 fw-bold text-danger">${seconds}</span>
-                      <div class="small text-uppercase">Secs</div>
-                  </div>
-              </div>
-          `;
+      <div class="d-flex justify-content-center gap-3">
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">${days}</span>
+          <div class="small text-uppercase">Days</div>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">:</span>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">${hours}</span>
+          <div class="small text-uppercase">Hours</div>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">:</span>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">${minutes}</span>
+          <div class="small text-uppercase">Mins</div>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">:</span>
+        </div>
+        <div class="text-center">
+          <span class="display-5 fw-bold text-secondary">${seconds}</span>
+          <div class="small text-uppercase">Secs</div>
+        </div>
+      </div>
+      `;
 
       if (distance < 0) {
         clearInterval(x);
