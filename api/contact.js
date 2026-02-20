@@ -1,4 +1,8 @@
-import { sql } from '@vercel/postgres';
+import { createPool } from '@vercel/postgres';
+
+const pool = createPool({
+    connectionString: process.env.DATABASE_URL || process.env.POSTGRES_URL,
+});
 
 export default async function handler(req, res) {
     // CORS Headers for Vercel
@@ -30,7 +34,7 @@ export default async function handler(req, res) {
         }
 
         // Try to insert the message
-        await sql`
+        await pool.sql`
       INSERT INTO messages (name, email, subject, message, created_at)
       VALUES (${name}, ${email}, ${subject}, ${message}, NOW());
     `;
@@ -40,7 +44,7 @@ export default async function handler(req, res) {
         // If the table doesn't exist, we can handle it gracefully the first time
         if (error.message && error.message.includes('relation "messages" does not exist')) {
             try {
-                await sql`
+                await pool.sql`
                 CREATE TABLE messages (
                     id SERIAL PRIMARY KEY,
                     name VARCHAR(255) NOT NULL,
@@ -52,7 +56,7 @@ export default async function handler(req, res) {
             `;
                 // Retry the insert after creating the table
                 const { name, email, subject, message } = req.body;
-                await sql`
+                await pool.sql`
                 INSERT INTO messages (name, email, subject, message, created_at)
                 VALUES (${name}, ${email}, ${subject}, ${message}, NOW());
             `;
