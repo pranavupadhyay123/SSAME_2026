@@ -83,4 +83,48 @@ document.addEventListener("DOMContentLoaded", function () {
   // 2. Paper Submission Deadline: Oct 5, 2026
   startCountdown("submission-countdown", "Oct 5, 2026 23:59:59");
 
+  // --- Contact Form Logic ---
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.innerText = "Sending...";
+      submitBtn.disabled = true;
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ name, email, subject, message })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert("Thank you! Your message has been sent successfully.");
+          contactForm.reset();
+        } else {
+          alert("Oops! Something went wrong. " + (result.error || result.message || "Please try again later."));
+        }
+      } catch (error) {
+        alert("Network error: Could not send the message. Please check your connection.");
+        console.error("Submission error:", error);
+      } finally {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
 });
