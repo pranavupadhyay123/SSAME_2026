@@ -1,10 +1,13 @@
-import { createPool } from '@vercel/postgres';
+const { createPool } = require('@vercel/postgres');
 
-const pool = createPool({
-    connectionString: process.env.DATABASE_URL || process.env.POSTGRES_URL,
-});
+let pool;
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
+    if (!pool) {
+        pool = createPool({
+            connectionString: process.env.DATABASE_URL || process.env.POSTGRES_URL,
+        });
+    }
     // CORS Headers for Vercel
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');

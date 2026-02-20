@@ -109,7 +109,15 @@ document.addEventListener("DOMContentLoaded", function () {
           body: JSON.stringify({ name, email, subject, message })
         });
 
-        const result = await response.json();
+        const contentType = response.headers.get("content-type");
+        let result;
+        if (contentType && contentType.indexOf("application/json") !== -1) {
+          result = await response.json();
+        } else {
+          const text = await response.text();
+          console.error("Server returned non-JSON:", text);
+          result = { error: `Server error (${response.status}). Please check Vercel logs.` };
+        }
 
         if (response.ok) {
           alert("Thank you! Your message has been sent successfully.");
